@@ -1,0 +1,17 @@
+default_platform(:ios)
+
+platform :ios do
+
+  lane :pr_builder do
+    setup_test
+    scan
+  end
+
+  lane :setup_test do 
+    sh("/usr/libexec/PlistBuddy -c \"Delete :Tests\" #{ENV['WORKSPACE']}/UnitTestsTests/TestExecutor.plist")
+    sh("/usr/libexec/PlistBuddy -c \"Add :Tests array\" #{ENV['WORKSPACE']}/UnitTestsTests/TestExecutor.plist")
+    sh("/usr/libexec/PlistBuddy -c \"Add :Tests: string feature1\" #{ENV['WORKSPACE']}/UnitTestsTests/TestExecutor.plist")
+    # sh("/usr/libexec/PlistBuddy -c \"Add :Tests: string feature2\" #{ENV['WORKSPACE']}/UnitTestsTests/TestExecutor.plist")
+    # sh("/usr/libexec/PlistBuddy -c \"Add :Tests: string feature3\" #{ENV['WORKSPACE']}/UnitTestsTests/TestExecutor.plist")
+  end
+end

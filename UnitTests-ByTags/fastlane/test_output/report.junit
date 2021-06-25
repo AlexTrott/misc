@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='UnitTestsTests.xctest' tests='9' failures='0'>
+  <testsuite name='UnitTestsTests.Feature1TestsTests' tests='3' failures='0'>
+    <testcase classname='UnitTestsTests.Feature1TestsTests' name='testExample1' time='0.001'/>
+    <testcase classname='UnitTestsTests.Feature1TestsTests' name='testExample2' time='0.000'/>
+    <testcase classname='UnitTestsTests.Feature1TestsTests' name='testExample' time='0.000'/>
+  </testsuite>
+  <testsuite name='UnitTestsTests.LoginTestsTests' tests='3' failures='0'>
+    <testcase classname='UnitTestsTests.LoginTestsTests' name='testExample1' time='0.000'/>
+    <testcase classname='UnitTestsTests.LoginTestsTests' name='testExample2' time='0.000'/>
+    <testcase classname='UnitTestsTests.LoginTestsTests' name='testExample' time='0.000'/>
+  </testsuite>
+  <testsuite name='UnitTestsTests.RegistrationTestsTests' tests='3' failures='0'>
+    <testcase classname='UnitTestsTests.RegistrationTestsTests' name='testExample1' time='0.000'/>
+    <testcase classname='UnitTestsTests.RegistrationTestsTests' name='testExample2' time='0.000'/>
+    <testcase classname='UnitTestsTests.RegistrationTestsTests' name='testExample' time='0.000'/>
+  </testsuite>
+</testsuites>
